@@ -7,7 +7,7 @@ from database import engine, SessionLocal
 
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI() 
 
 class LaptopCreate(BaseModel):
     marca: str
